@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var bears = [];
 router
     .route('/bears')
-    .post(()req, res)=>{
+    .post((req, res)=>{
         var bear = {};
         bear.name = req.body.name;
         bears.push(bear);
