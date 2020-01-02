@@ -9,7 +9,7 @@ router
         var bear = {};
         bear.name = req.body.name;
         bears.push(bear);
-        res.json({messege: 'Bear created!!!'});
+        res.json({messege: 'Bear created!!'});
 })
 .get((req, res)=>{
     res.json(bears);
